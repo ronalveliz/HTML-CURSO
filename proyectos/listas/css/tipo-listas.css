@@ -1,0 +1,15 @@
+body {
+    color: white;
+    background-color: purple;
+}
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    letter-spacing: 3px;
+}   
+ul>li {
+
+    list-style-type: circle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+/* */
