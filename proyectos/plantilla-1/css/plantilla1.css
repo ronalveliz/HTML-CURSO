@@ -1,0 +1,21 @@
+header{
+    background-color: darkgoldenrod;
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+
+section{
+    width: 30%;
+    float: left;
+   margin: 1.5%;
+}
+
+footer{
+    background-color: darkgoldenrod;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
