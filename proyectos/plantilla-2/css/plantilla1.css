@@ -11,6 +11,17 @@ section{
     padding: 20px;
     float: left;
     width: 50%;
+    height: 300px;
+    border-style: solid ;
+    overflow: auto;
+}
+article{
+    background-color: rgba(34, 255, 0, 0.6);
+    padding: 20px;
+    overflow: auto;
+    padding-left: 20px; ;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 footer{
     clear: both;
