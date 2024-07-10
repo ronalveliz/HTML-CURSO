@@ -12,26 +12,30 @@ div{
     height: 150px;
    padding: 30px;
     text-align: center;
-    border-radius: 40px ;
+    border-radius: 10px ;
+    margin: 0px 5px 2px 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
     
 }
 #cajaNegra{
-    background-color: black;
-   /* float: left;*/
-   clear: both;
-   width: 100%;
+    background: url(/proyectos/img/paisajes/img_1.jpg);
+    /*background-color: black;*/
+    clear: both;
+    width: 100%;
 }
 #cajaAzul{
-    background-color: blue;
+    background: url(/proyectos/img/paisajes/img_3.jpg);
     float: right;
 }
 #cajaVerde{
-    background-color: rgb(0, 255, 72);
+    background: url(/proyectos/img/paisajes/img_5.jpg);
     float: left
 }
 #cajaRoja{
-    background-color: red;
-    /*float: right;*/
+    background-image: url(/proyectos/img/paisajes/img_2.jpg);
     clear: both;
     width: 100%;
 }
