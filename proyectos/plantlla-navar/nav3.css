@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+ *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+
+ }
+ h1,h2,h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+ }
+ #contenedor{
+    width: 1200;
+    height: 1000px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+ }
+
+ #header{
+    height: 20%;
+    background: #A4A4A4;
+    border-radius: 1em;
+    margin: 1em;
+ }
+
+#header>h1{
+    top:50%;
+    position: relative;
+}
+#nav{
+    height: 10%;
+    background: #2f9559;
+    border-radius: 1em;
+    margin: 1em;
+}
+.nav nav{
+    order:1;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+}
+
+.nav .logo {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    
+}
+.nav .logo img {
+    width: 85px;
+    transition:all 0.5s;
+}
+.nav .logo img:hover{
+    transform:scale(1.2) ;
+}
+#nav>h2{
+    top: 50%;
+    position: relative;
+}
+.nav .nav-links{
+    list-style: none;
+}
+.nav .nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.5;
+}
+.nav .nav-links li:nth-child(1){
+    padding: 0px 20px 0px 0px ;
+}
+.nav .nav-links li:hover{
+    transform: scale(1.2);
+}
+.nav .nav-links a{
+    font-size: 700;
+    color:bisque;
+    text-decoration: none;
+}
+.nav .nav-links a:hover{
+    color: #dbf931;
+}
+
+.nav .btn{
+   order: 2;
+   margin-left: 20px;
+}
+.nav .btn button{
+   font-size: 1.2em;
+   color: red;
+   padding: 9px 25px;
+   background: #A4A4A4;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.5; 
+
+}
+.nav .btn button:hover{
+    background-color: rgb(26, 170, 170);
+    color: #dbf931;
+    transform: scale(1.2);
+}
+#contenido{
+    height: 55%;
+    margin: 0em 1em;
+}
+
+#section{
+    height: 95%;
+    width: 71%;
+    background: rgb(101, 97, 97);
+    border-radius: 1em;
+    margin: 0.5em;
+    float: left;
+}
+#aside {
+    height: 95%;
+    width: 25%;
+    background: red;
+    border-radius: 1em;
+    margin: 0.5em;
+    float: right;
+}
+#aside>h2{
+    top:50%;
+    position: relative;
+}
+.articulo{
+    height: 20%;
+    width: 90%;
+    background: rgb(225, 206, 206);
+    border-radius: 1em;
+    padding-right: 5%;
+    margin: 0.5em;
+    float: right;
+   
+}
+.articulo>h3{
+    top:50%;
+    position: relative;
+}
+
+
+#motos{
+    background-image: url(img/mundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#footer{
+    width: 100%;
+    height: 25%;
+    background: red;
+    border-radius: 1em;
+    margin: 0.5em;
+    float: right;
+}

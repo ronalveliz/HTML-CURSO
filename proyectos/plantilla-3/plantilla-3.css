@@ -6,3 +6,16 @@ table,th,td{
     
     border:2px solid rgb(0, 0, 0);  
 }
+#whatsapp{
+    background-image: url(img/whatsapp.png);
+    
+}
+
+
+div>p{
+    
+    background-color: aqua;
+    width:max-content;
+    padding: 2px;
+
+}
