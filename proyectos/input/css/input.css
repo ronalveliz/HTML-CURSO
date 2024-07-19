@@ -1,0 +1,91 @@
+/* css document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* termina el reset*/
+
+ body{
+    background-color: #232323; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+ }
+ .titulo{
+    color:#f3f3f3 ;
+    text-align: center;
+    margin: 40px 0;
+
+ }
+
+ .gallery-content,.gallery-content-extras{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000%;
+    margin: auto;
+
+ }
+ .galeria-img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 3%;
+    /*rellena el espacio que la fono no puede cubrir*/
+    object-fit: cover;
+    /* filtrompara escohger la intensidad de la luz de la img*/
+    filter:brightness(50%);
+     /* animacion de encoger y agrandar las img infinitamente*/
+     animation: escalar 1.5s infinite alternate;
+ }
+ /*escogemos cuando se va a encoger y agrandar la img*/
+@keyframes escalar{
+   /* to{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.8);
+    }
+    to{
+        transform: scale(1.01);
+    }
+    to{
+        transform: scale(1.8);
+    }
+    to{
+        transform: scale(1.08);
+    }
+
+    from {
+        transform: scale(1.03);
+    }*/
+    0%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.08);
+    }
+    50%{
+        transform: scale(1.01);
+    }
+    70%{
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+
+}
+
+.gallery-content>.galeria-img:hover{
+    filter: brightness(100%);
+    animation: none;
+    transform: scale(1.2);
+    box-shadow:3px 3px 15px rgb(234, 234, 22);
+}
+.gallery-content-extras>.galeria-img:hover{
+    filter: brightness(100%);
+    animation: none;
+    transform: scale(1.2);
+    box-shadow:3px 3px 15px rgb(234, 22, 231);
+}
