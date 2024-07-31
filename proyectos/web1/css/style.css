@@ -255,7 +255,160 @@ footer {
     padding-bottom: 50px;
     border-bottom:1px solid #ccc ;
 }
+.content-foo {
+    align-items: center;
+   
+}
+.content-foo h4{
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px solid #9af4ee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
 .titulo-final {
     text-align: center;
+    font-size: 24px;
     padding-top: 20px;
+    color: #9e9797;
+}
+
+/* Media Query´s*/
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+    .content-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .content-txt {
+        width: 90%;
+    }
+    .img-nosotros {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    /* galeria*/
+    .img-port{
+        width: 44%;
+    }
+    /*Clientes*/
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cards .card {
+        width: 90%;
+    }
+    /*solo se ataca al primer elemento del contenedor*/
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    /*Servicios*/
+    .servicio-cont {
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .servicio-ind {
+        width: 100%;
+        text-align:  center;
+
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    nav {
+        text-align: center;
+
+    }
+    nav>a {
+        margin-right: 5px;
+    }
+    .txt-header h1 {
+        font-size:  35px;
+    }
+    .txt-header h2 {
+        font-size: 20px;
+    }
+    
+    /* Servicios*/
+    .servicio-cont {
+        justify-content:  center;
+        flex-direction: column;
+    }
+    .servicio-ind {
+        width: 100%;
+        text-align:  center;
+
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2) {
+        margin-bottom: 60px;
+    }
+    .servicio-ind img {
+        width: 90%;
+    }
+
+    /*Nosotros*/
+    .img-nosotros {
+        width: 99%;
+        margin-bottom: 60px;
+    }
+    .sobre-nosotros .content-txt {
+        width: 95%;
+    }
+    /* Galeria*/
+    .img-port {
+        width: 95%;
+    }
+
+    /*Clientes*/
+    .cards .card {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card img {
+        width: 110px;
+        height: 110px;
+    }
+    .content-footer {
+        flex-direction: column;
+        border: none;
+        
+    }
+    .content-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4 {
+        border: none;
+    }
+    .content-foo p {
+        color: #fff;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final {
+        font-size: 25px;
+    }
 }
