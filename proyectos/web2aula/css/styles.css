@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AR:wght@100..400&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    min-width: 100vh;
+    background-color: #0c192c;
+}
+
+header {
+    background-image: linear-gradient(to right, #00000066, #0000005d), url(../img/img_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+header .txt-cabecera {
+    width: 100%;
+    height: 300px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.txt-cabecera h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(0%,-40%);
+    
+}
+/*Animacion de hola como una pelota letra por letra*/
+.txt-cabecera h1 span {
+    color: #fff;
+    font-size: 1.8em;
+    font-family: verdana;
+    display: table-cell;
+    animation: txtanimate 1s ease-in-out infinite;
+
+}
+@keyframes txtanimate {
+    0%{transform: translateY(0px);
+        text-shadow:0 1px 0 #d8d8d8,
+        0 2px 0 #d8d8d8,
+        0 3px 0 #d8d8d8,
+        0 2px 5px rgb(0, 0, 0, .4);}
+    50%{transform: translateY(-20px);
+        text-shadow:0 1px 0 #d8d8d8,
+        0 2px 0 #d8d8d8,
+        0 3px 0 #d8d8d8,
+        0 2px 5px rgb(0, 0, 0, .4);}
+   100%{transform: translateY(0px);
+    text-shadow:0 1px 0 #d8d8d8,
+    0 2px 0 #d8d8d8,
+    0 3px 0 #d8d8d8,
+    0 2px 5px rgb(0, 0, 0, .4);}
+    
+}
+/*Animacion de hola como una pelota letra por letra*/
+.txt-cabecera h1 span:nth-child(1){
+    animation-delay:.1s ;
+}
+.txt-cabecera h1 span:nth-child(2){
+    animation-delay:.2s ;
+}
+.txt-cabecera h1 span:nth-child(3){
+    animation-delay:.3s ;
+}
+.txt-cabecera h1 span:nth-child(4){
+    animation-delay:.4s ;
+}
+.txt-cabecera h1 span:nth-child(5){
+    animation-delay:.5s ;
+}
+
+.txt-cabecera h2{
+    
+    font-size: 3em;
+    position: absolute;
+}
+.border {
+    color: #000;
+    text-shadow: 
+        -1px -1px 10px white,
+        1px -1px 0 white,
+        1px 1px 0 white,
+        -1px 1px 0 white;
+        
+}
+.wave {
+    color: #a909c9;
+    animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave {
+    0%, 100% {
+        clip-path: polygon(
+            0% 47%, 
+            10% 48%, 
+            33% 54%, 
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+
+        );  
+    }
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+    color: #f2f2f2;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+    transform: scale(1.2);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    background: gold;
+    color: #000;
+    transform: scale(1);
+}
+/*container*/
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles {
+    position: relative;
+    display: flex;
+}
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0  50px #4fc3dd,
+                0 0  100px #4fc3dc;
+    animation:  playstars 20s linear infinite;
+    animation-duration: calc(160s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75 ;
+    box-shadow: 0 0 0 10px #c52bd944,
+                0 0  50px #c34fdd,
+                0 0  100px #7a0874;
+}
+@keyframes playstars {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-100vh) scale(1);
+    }
+}
+
+/*puestos de trabajo
+.prof {
+    background-color: #f2f2f2;
+    padding: 10px 0 5px ;
+    width: 100%;
+}
+.profe{
+    background-color: #000;
+    width: 200px;
+    height: 100px;
+    margin: 20px 0 10px 30px;
+}
+
+section{
+    background-color: azure;
+    width: auto;
+    height: auto;
+}
+*/
