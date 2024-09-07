@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>FORMULARIO CON HTML5</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/karoll.jaimes09@gmail.com" method="POST">
+        <h2>Contacto</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name"
+            placeholder="Nombre">
+            
+            <label for="phone">telefono</label>
+            <input type="tel" name="phone" id="phone"
+            placeholder="telefono">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="email">
+
+            <label for="message">message</label>
+            <textarea name="message" id="message"
+            placeholder="mensaje"rows="5" cols="30"></textarea>
+
+            <!-- .form-txt>a*2[href="#"] -->
+            <div class="form-txt">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+            
+            <input type="submit" class="btn-submit"
+            value="enviar">
+
+        </div>
+    </form>
+</body>
+<!-- input para que se comporten todos a la vez, introduccion de datos  input label- permite poner nombre y que se vea, atributo for es vinculante  -->
+</html>
